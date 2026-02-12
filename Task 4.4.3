@@ -1,0 +1,24 @@
+using System;
+
+class MainClass
+{
+    public static void Main(string[] args)
+    {
+        var (name, age) = ("Jane", 27);
+        (string name1, int age1) anketa;
+        
+        Console.WriteLine("Your name: {0}", name);
+        Console.WriteLine("Your age: {0}", age);
+        
+
+        Console.Write("Enter your name: ");
+        anketa.name1 = Console.ReadLine();
+        Console.Write("Enter your age: ");
+        anketa.age1 = Convert.ToInt32(Console.ReadLine());
+
+        Console.WriteLine("Your name: {0} \nYour age: {1}", anketa.name1, anketa.age1);
+        Console.ReadKey();
+
+    }   
+    
+}
