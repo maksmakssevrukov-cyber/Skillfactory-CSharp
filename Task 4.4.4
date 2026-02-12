@@ -1,0 +1,26 @@
+using System;
+
+class MainClass
+{
+    public static void Main(string[] args)
+    {
+        (string Name, string Type, double Age, int NameCount) Pet;
+
+        Console.Write("Enter your pet's name: ");
+        Pet.Name = Console.ReadLine();
+        Console.Write("Enter your pet's type (dog, cat, etc.): ");
+        Pet.Type = Console.ReadLine();
+        Console.Write("Enter your pet's age: ");
+        Pet.Age = Convert.ToInt32(Console.ReadLine());
+        Pet.NameCount = Pet.Name.Length;
+
+        Console.WriteLine("Your pet's name: {0}", Pet.Name);
+        Console.WriteLine("Your pet's type: {0}", Pet.Type);
+        Console.WriteLine("Your pet's age: {0}", Pet.Age);
+        Console.WriteLine("The Length of your pet's name: {0}", Pet.NameCount);
+
+
+
+    }   
+    
+}
